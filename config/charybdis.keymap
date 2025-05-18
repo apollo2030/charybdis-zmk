@@ -74,7 +74,7 @@
         Bluetooth {
             label = "bluetooth";
             bindings = <
-             &kp ESC   &kp      N1  &kp      N2  &kp       N3  &kp       N4  &kp N5       &bt 0 &bt 1 &bt 2 &bt 3 &bt 4 &bt 5             
+             &kp ESC   &kp      N1  &kp      N2  &kp       N3  &kp       N4  &kp N5       &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5             
              &kp TAB   &kp       Q  &kp       W  &kp        E  &kp        R  &kp T        &none &none &none &none &none &bt BT_CLR
              &kp SPACE &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G        &none &none &none &none &none &none
              &kp LEFT  &lt   POI Z  &kp       X  &kp        C  &kp        V  &kp B        &none &none &none &none &none &none
