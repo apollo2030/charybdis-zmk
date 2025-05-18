@@ -67,7 +67,7 @@
              &kp TAB   &kp       Q  &kp       W  &kp        E  &kp        R  &kp T        &kp Y     &kp        U  &kp        I  &kp       O  &kp               P  &bootloader
              &kp SPACE &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G        &kp H     &hml RSHFT J  &hml RCTRL K  &hml RALT L  &hml RGUI SEMICOLON  &kp DELETE
              &kp LEFT  &lt   POI Z  &kp       X  &kp        C  &kp        V  &kp B        &kp N     &kp        M  &kp    COMMA  &kp     DOT  &lt POI SLASH        &kp ENTER
-                       &kp N1       &kp      N2  &kp       N3  &kp       N4  &kp N5       &tog BLTH   &kp       N7  &kp N9
+                       &kp N1       &kp      N2  &kp       N3  &kp       N4  &kp N5       &to BLTH   &kp       N7  &kp N9
             >;
         };
 
@@ -75,10 +75,10 @@
             label = "bluetooth";
             bindings = <
              &kp ESC   &kp      N1  &kp      N2  &kp       N3  &kp       N4  &kp N5       &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5             
-             &kp TAB   &kp       Q  &kp       W  &kp        E  &kp        R  &kp T        &none &none &none &none &none &bt BT_CLR
-             &kp SPACE &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G        &none &none &none &none &none &none
-             &kp LEFT  &lt   POI Z  &kp       X  &kp        C  &kp        V  &kp B        &none &none &none &none &none &none
-                       &kp N1       &kp      N2  &kp       N3  &kp       N4  &kp N5       &tog BASE &kp       N7  &kp N9
+             &kp TAB   &kp       Q  &kp       W  &kp        E  &kp        R  &kp T        &none &none &none &none &none &none
+             &kp SPACE &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G        &none &none &none &none &none &bt BT_CLR
+             &kp LEFT  &lt   POI Z  &kp       X  &kp        C  &kp        V  &kp B        &none &none &none &none &none &bootloader
+                       &kp N1       &kp      N2  &kp       N3  &kp       N4  &kp N5       &to BASE &kp       N7  &kp N9
             >;
         };
 
