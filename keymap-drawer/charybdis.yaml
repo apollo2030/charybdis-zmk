@@ -136,7 +136,7 @@ layers:
   - Y
   - U
   - J
-  - O
+  - U
   - P
   - '&bootloader'
   - $$mdi:keyboard-space$$
