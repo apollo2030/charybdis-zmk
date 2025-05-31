@@ -11,7 +11,7 @@ layers:
   - '7'
   - '8'
   - '9'
-  - $$mdi:arrow-right-bold$$
+  - '0'
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:keyboard-tab$$
   - Q
