@@ -5,6 +5,8 @@
  */
  
 #include "charybdis.dtsi"
+#include "charybdis_3610.dtsi"
+#include <dt-bindings/zmk/input_transform.h>
 
 &default_transform {
 	col-offset = <6>;
@@ -20,7 +22,7 @@
 		, <&pro_micro 8 GPIO_ACTIVE_HIGH>
 		;
 };
-
+/*
 &pinctrl {
     spi0_default: spi0_default {
         group1 {
@@ -66,4 +68,17 @@
     device = <&trackball>;
     
     };
+};
+*/
+
+&spi0 {
+    status = "okay";
+};
+
+&trackball {
+    status = "okay";
+};
+
+&trackball_split {
+	device = <&trackball>;
 };
