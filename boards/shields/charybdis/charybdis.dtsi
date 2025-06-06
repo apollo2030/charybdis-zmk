@@ -50,5 +50,6 @@
 };
 
 &charybdis_6col_layout {
+    kscan = <&kscan0>;
     transform = <&default_transform>;
 };
