@@ -10,11 +10,9 @@
 #define BASE 0
 #define BLTH 1
 #define POI 2
-#define SYM 2
-#define NAV 3
-#define MED 4
-#define SCR 6
-#define SNI 7
+#define SCR 4
+#define SNI 5
+
 
 &sl {
   release-after-ms = <250>;
@@ -65,12 +63,12 @@
         device = <&trackball_split>;
 
         snipe {
-            layers = <Sniper>;
+            layers = <SNI>;
             input-processors = <&zip_xy_scaler 1 3>;
         };
 
         scroll {
-            layers = <Nav>;
+            layers = <SCR>;
             input-processors = <&zip_xy_scaler 1 3>, <&zip_xy_to_scroll_mapper>, <&zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT)>;
         };
     };
