@@ -1,14 +1,7 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "charybdis-layouts.dtsi"
 
-
-
 / {
-    chosen {
-        zmk,kscan = &kscan0;
-        zmk,physical-layout = &charybdis_6col_layout;
-    }; 
-
     vbatt: vbatt {
 	compatible = "zmk,battery-nrf-vddh";
     };
@@ -38,6 +31,16 @@
             ;
     };
 
+    &charybdis_6col_layout {
+    kscan = <&kscan0>;
+    transform = <&default_transform>;
+};
+
+chosen {
+        zmk,kscan = &kscan0;
+        zmk,physical-layout = &charybdis_6col_layout;
+    }; 
+
     split_inputs {
         #address-cells = <1>;
         #size-cells = <0>;
@@ -49,7 +52,3 @@
     };
 };
 
-&charybdis_6col_layout {
-    kscan = <&kscan0>;
-    transform = <&default_transform>;
-};

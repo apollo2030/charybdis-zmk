@@ -1,7 +1,7 @@
 #include <physical_layouts.dtsi>
 
 / {
-    charybdis_6col_layout: physical_layout_0 {
+    charybdis_6col_layout: charybdis_6col_layout {
         compatible = "zmk,physical-layout";
         display-name = "6-column";
 
