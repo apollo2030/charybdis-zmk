@@ -39,7 +39,7 @@
     charybdis_6col_layout: charybdis_6col_layout {
         compatible = "zmk,physical-layout";
         display-name = "6-column";
-
+        kscan = <&kscan0>;
         transform = <&default_transform>;
 
         keys  //                     w   h    x    y     rot    rx    ry
