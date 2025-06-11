@@ -1,6 +1,11 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "charybdis-layouts.dtsi"
 
+&charybdis_6col_layout {
+    kscan = <&kscan0>;
+    transform = <&default_transform>;
+};
+
 / {
     vbatt: vbatt {
 	compatible = "zmk,battery-nrf-vddh";
@@ -47,7 +52,3 @@
     };
 };
 
-&charybdis_6col_layout {
-    kscan = <&kscan0>;
-    transform = <&default_transform>;
-};
