@@ -21,6 +21,7 @@
     };
 	
     kscan0: kscan {
+        compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "col2row";
 		row-gpios
 			= <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
@@ -33,7 +34,7 @@
 
     charybdis_layout0: charybdis_layout {
         compatible = "zmk,physical-layout";
-        display-name = "6-column";
+        display-name = "Charybdis Layout";
         kscan = <&kscan0>;
         transform = <&default_transform>;
 
