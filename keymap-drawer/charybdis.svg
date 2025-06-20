@@ -384,11 +384,9 @@ path.combo {
 <text x="0" y="0" class="key tap">9</text>
 </g>
 <g class="combo combopos-0">
-<path d="M420,88 l373,-27" class="combo"/>
-<path d="M420,88 l-373,27" class="combo"/>
-<rect rx="6" ry="6" x="406" y="75" width="28" height="26" class="combo"/>
-<text x="420" y="88" class="combo tap">
-<tspan x="420" dy="-0.6em">&amp;mkp</tspan><tspan x="420" dy="1.2em">LCLK</tspan>
+<rect rx="6" ry="6" x="770" y="47" width="28" height="26" class="combo"/>
+<text x="784" y="60" class="combo tap">
+<tspan x="784" dy="-0.6em">&amp;mkp</tspan><tspan x="784" dy="1.2em">LCLK</tspan>
 </text>
 </g>
 <g class="combo combopos-1">
