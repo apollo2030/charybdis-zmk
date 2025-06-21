@@ -56,7 +56,7 @@ layers:
   - '5'
   - {t: Bluetooth, h: toggle}
   - '&mkp LCLK'
-  - '9'
+  - '&studio_unlock'
   Bluetooth:
   - $$mdi:keyboard-esc$$
   - '1'
