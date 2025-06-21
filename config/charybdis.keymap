@@ -61,16 +61,6 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
         input-processors = <&zip_x_scaler 1 3>, <&zip_x_scaler 3 1>, <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP)>;
-        
-        snipe {
-            layers = <SNI>;
-            input-processors = <&zip_xy_scaler 1 3>;
-        };
-
-        scroll {
-            layers = <SCR>;
-            input-processors = <&zip_x_scaler 1 3>, <&zip_x_scaler 3 1>,  <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP)>;
-        };
     };
 
     keymap {
