@@ -6,11 +6,20 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
 	default y
 
+config ZMK_TEMP_SENSOR
+	default y
+
 endif
 
 if SHIELD_CHARYBDIS_LEFT || SHIELD_CHARYBDIS_RIGHT
 
 config ZMK_SPLIT
 	default y
+
+config SENSOR
+	default y if SHIELD_CHARYBDIS_RIGHT
+
+config TEMP_NRF5
+	default y if SHIELD_CHARYBDIS_RIGHT
 
 endif

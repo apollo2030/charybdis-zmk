@@ -1,0 +1,16 @@
+config ZMK_TEMP_SENSOR
+    bool "Enable temperature sensor support"
+    depends on SENSOR
+    select TEMP_NRF5
+    help
+      Enable temperature sensor support with Bluetooth LE service
+
+if ZMK_TEMP_SENSOR
+
+config ZMK_TEMP_SENSOR_UPDATE_INTERVAL
+    int "Temperature sensor update interval in milliseconds"
+    default 30000
+    help
+      How often to read and update the temperature sensor value
+
+endif # ZMK_TEMP_SENSOR

@@ -33,3 +33,22 @@
 &trackball {
     status = "okay";
 };
+
+// Enable temperature sensor
+&temp {
+    status = "okay";
+    compatible = "nordic,nrf-temp";
+};
+
+// Add temperature sensor to aliases  
+/ {
+    aliases {
+        temp-sensor = &temp;
+    };
+    
+    temp_sensor {
+        compatible = "zmk,temp-sensor";
+        sensor = <&temp>;
+        update-interval-ms = <30000>; // 30 seconds
+    };
+};

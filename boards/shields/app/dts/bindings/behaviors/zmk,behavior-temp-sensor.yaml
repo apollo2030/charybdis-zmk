@@ -1,0 +1,16 @@
+# Device tree binding for temperature sensor behavior
+
+description: ZMK Temperature Sensor Behavior
+
+compatible: "zmk,behavior-temp-sensor"
+
+properties:
+  sensor:
+    type: phandle
+    required: true
+    description: Temperature sensor device phandle
+    
+  update-interval-ms:
+    type: int
+    default: 30000
+    description: Temperature update interval in milliseconds
