@@ -55,15 +55,17 @@
             require-prior-idle-ms = <125>;
             hold-trigger-on-release;
         };
-    };
 
-    temp_sensor_behavior {
+        temp_sensor_behavior {
     compatible = "zmk,behavior-temp-sensor";
     label = "TEMP_SENSOR";
     sensor = <&temp>;
     update-interval-ms = <30000>; // 30 seconds
     #binding-cells = <0>;
    };
+    };
+
+    
 
     trackball_listener {
         compatible = "zmk,input-listener";

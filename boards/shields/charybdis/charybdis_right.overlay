@@ -47,7 +47,7 @@
     };
     
     temp_sensor {
-        compatible = "zmk,temp-sensor";
+        compatible = "zmk,behavior-temp-sensor";
         sensor = <&temp>;
         update-interval-ms = <30000>; // 30 seconds
     };
