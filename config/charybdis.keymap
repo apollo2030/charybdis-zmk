@@ -60,6 +60,11 @@
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
+
+        scroller {
+            layers = <SCR>;
+            input-processors = <&zip_xy_to_scroll_mapper>;
+        }
     };
 
     keymap {
